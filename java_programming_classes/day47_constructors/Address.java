@@ -5,7 +5,20 @@ public class Address {
     private String city;
     private String state;
     private String zipCode;
-    private String country = "USA";
+    private String country;
+//constructor - automatically called. Special method, doesn't have return type, Same name as a class name
+    public Address(){
+        System.out.println("Address constructor");
+    }
+    //second constructor, overloaded constructor ->provides shortcut to initialized variables
+
+    public Address(String street, String city, String state, String zipCode, String country){
+        this.street=street;
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
+        this.country = country;
+    }
 
     public String getStreet() {
         return street;
@@ -44,17 +57,20 @@ public class Address {
     }
 
     public void setCountry(String country) {
-        this.country = country;
+        if(country.equalsIgnoreCase("usa")){
+            this.country = "USA";
+        }else{
+            System.out.println("ERROR: Country can be USA only!");
+        }
+
     }
 
     @Override
     public String toString() {
-        return "Address{" +
-                "street='" + street + '\'' +
+        return "street='" + street + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zipCode='" + zipCode + '\'' +
-                ", country='" + country + '\'' +
-                '}';
+                ", country='" + country + '\'';
     }
 }
