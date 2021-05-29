@@ -1,8 +1,12 @@
 package java_programming_classes.day47_constructors;
 
 public class Bus {
-    String driver;
-    String engine;
+    Driver driver;
+    Engine engine;
+
+    public String toString(){
+        return driver.getName() + " | "+engine.getCylinders();
+    }
 
 
 }
