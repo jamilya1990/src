@@ -20,10 +20,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                '}';
+        return "Customer{" + "name='" + name + '\'' + ", id=" + id + '}';
     }
 
     public String getName() {
