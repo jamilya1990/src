@@ -5,6 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 
 public class StaticBlockDemo {
+
+    public static class Inner{
+        //variable and methods of inner class goes here (not that popular to have inner/nested static classes)
+    }
+
     static int num;
     static List<String> carModels;
     static {
