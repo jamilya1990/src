@@ -12,7 +12,7 @@ public class Admin extends User{
        System.out.println("Constructor of Admin class");
     }
 
-    public Admin (String role, String name, int id){
+    public Admin (String name, int id){
         super("Admin", name, id);
         System.out.println("Admin class 2 args constructor");
     }
