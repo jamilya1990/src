@@ -1,6 +1,6 @@
-package java_programming_classes.day56_abstraction;
+package java_programming_classes.day56_abstraction.greeting_pack;
 
-interface Greeting {
+public interface Greeting {
     void hi(); //public abstract by default
     void bye(); ////public abstract by default
 }
